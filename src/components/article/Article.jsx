@@ -68,7 +68,7 @@ class Article extends Component {
                     <div className="curtidas">
                         {this.props.currentUser ?
                             this.state.isLiked ?
-                                <button className="descurtirBotao" onClick={this.handleDislike.bind(this)}>Curtir</button>
+                                <button className="descurtirBotao" onClick={this.handleDislike.bind(this)}>Descurtir</button>
                                 : <button className="curtirBotao" onClick={this.handleLike.bind(this)}>Curtir</button>
                             : null
                         }

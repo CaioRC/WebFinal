@@ -204,13 +204,14 @@ export async function saveArticle(titulo, descricao, conteudo, categoria,autorId
 }
 
 export async function putArticle(id , titulo, descricao, conteudo, categoria,autorId) {
+  console.log(JSON.stringify({id, titulo, descricao, conteudo, categoria , autorId }))
   const req = await fetch(`${BASE_API}/api/artigos/${id}`, {
     method: "PUT",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({id, titulo, descricao, conteudo, categoria,autorId}),
+    body: JSON.stringify({id, titulo, descricao, conteudo, categoria,autorId }),
   });
   if (req.status === 200) {
     const json = await req.json();

@@ -17,7 +17,6 @@ class UserArtigosItem extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props)
         this.callAutorId();
     }
 
@@ -81,7 +80,7 @@ class UserArtigosItem extends Component {
                                     titulo: this.props.titulo,
                                     descricao: this.props.descricao,
                                     conteudo: this.props.conteudo,
-                                    categoria: this.props.conteudo,
+                                    categoria: this.props.categoria,
                                     id: this.props.id
                                 }
                             }} >

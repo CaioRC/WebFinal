@@ -24,6 +24,7 @@ class ArticleWrite extends Component {
     }
 
     componentDidMount() {
+        console.log(this)
         if (this.props.location.state.alterar) {
             this.setState({
                 title: this.props.location.state.titulo,
@@ -38,10 +39,10 @@ class ArticleWrite extends Component {
         event.preventDefault();
 
         const { title, description, content, topic } = this.state;
-
+        console.log(this)
         if (this.props.location.state.alterar) {
             const sendPut = await putArticle(this.props.location.state.id, title, description, content, topic,this.props.currentUser.id)
-
+            console.log(sendPut)
             alert("Artigo Alterado com sucesso")
         } else {
 

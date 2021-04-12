@@ -8,7 +8,7 @@ import "./articlepage.css"
 
 export default (props) => (
     <div className="articlePage">
-        <Article id={props.match.params.id}/>
-        <Comments id={props.match.params.id}/>
+        <Article key={props.match.params.id} id={props.match.params.id}/>
+        <Comments key={props.match.params.id} id={props.match.params.id}/>
     </div>
 );

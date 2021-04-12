@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import { Link } from "react-router-dom";
 import { signOut } from "../../redux/user/useAction";
+import { withRouter } from "react-router-dom";
 
 import Search from '../../assets/search.svg'
 
@@ -26,6 +27,16 @@ class Header extends Component{
     this.setState({ [name]: value });
   };
 
+    onSearchSubmit = event =>{
+        event.preventDefault()
+        this.props.history.push({
+            pathname:"/agora/search/" + this.state.search,
+            state:{
+                search: this.state.search
+            }
+        })
+    }
+
     render(){
         const {search} = this.state
         return(
@@ -35,19 +46,15 @@ class Header extends Component{
            
         </Link>
 
-        <div className="searchbar">
-            <input type="text" name="search" placeholder="Procure artigos" value={search} onChange={this.handleChange}  />
-            
-            <Link to={{
-                pathname:"/agora/search/" + this.state.search,
-                state:{
-                    search: this.state.search
-                }
-            }}>
-            <input className="searchbutton" type="image" src={Search}></input>
-
-            </Link>
-        </div>
+        <form className="searchbar" onSubmit={event => this.onSearchSubmit(event)}>
+            <div className="inputwrapper">
+                <input type="text" name="search" placeholder="Procure artigos" value={search} onChange={this.handleChange}  />
+                
+                <button type='submit'  className="searchbutton">
+                    <img src={Search} alt="Search Button"/>                
+                </button>
+            </div>            
+        </form>
 
         <div className="options">
             <Link className="option" to="/agora/topics">
@@ -101,4 +108,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(Header);
+)( withRouter(Header));

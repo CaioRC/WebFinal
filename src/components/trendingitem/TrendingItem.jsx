@@ -21,7 +21,6 @@ class TrendingItem extends Component {
     async callAutorId() {
         const autor = await geUserByID(this.props.autorId)
 
-        console.log(autor)
         this.setState({
             nome: autor.nome,
             idAutor: autor.id

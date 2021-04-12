@@ -20,7 +20,7 @@ export default () => (
                     TopicName:  topicData.name
                 }}
                 >
-                    <TopicItem name={topicData.name} imageUrl={topicData.imageUrl} />
+                    <TopicItem key={topicData.name} name={topicData.name} imageUrl={topicData.imageUrl} />
                 </Link>
             )
 
