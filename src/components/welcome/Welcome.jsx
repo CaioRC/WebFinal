@@ -9,7 +9,7 @@ const Welcome = () => (
         <div className="welcomeContent">
             <h2>Compartilhe e descubra conhecimento</h2>
             <p>Leia ideias e experiencias sobre diversos tópicos da área de Computação <br/> e compartilhe as suas próprias.</p>
-            <Link className="welcomeSignup" to="/sign-in-up">
+            <Link className="welcomeSignup" to="/agora/sign-in-up">
                 Cadastre-se
         </Link>
         </div>
