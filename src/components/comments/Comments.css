@@ -1,0 +1,26 @@
+.comments {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+
+.commentsContent {
+  width: 100%;
+  padding-left: 13%;
+}
+
+.commentsForm{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 13%;
+}
+
+
+
+.commentsItems {
+ margin-top: 10px;
+}
+

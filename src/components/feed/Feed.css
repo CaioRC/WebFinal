@@ -1,0 +1,13 @@
+.feed {
+  width: 100%;
+}
+.feedContent {
+  padding-left: 11%;
+  padding-right: 11%;
+}
+
+.feedItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

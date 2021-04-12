@@ -1,0 +1,25 @@
+.topics {
+    display: flex;
+    flex-direction: column;
+    padding-left: 13%;
+    padding-right: 13%;
+  }
+
+.topicsContent{
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+.link{
+  min-width: 46%;
+    height: 240px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 0 7.5px 15px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}

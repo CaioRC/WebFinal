@@ -1,0 +1,66 @@
+.header{
+    height: 70px;
+    padding-left: 12%;
+    padding-right: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    border-color: #707070;
+    background-color: #ECECEC;
+    box-sizing: border-box;
+}
+.logo-container {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+  }
+
+.options {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+  }
+.option {
+    padding: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+
+.searchbar{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbutton{
+
+}
+
+.searchbar input{
+  width: 70%;
+  height: 44%;
+  margin-right:10px;
+}
+
+.signUp{
+    padding: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    background-color: #FFC017;
+    white-space: nowrap;
+    border-radius: 10px;
+}

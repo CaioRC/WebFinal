@@ -1,0 +1,14 @@
+.userartigos {
+    width: 100%;
+  }
+  .userartigosContent {
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+  
+  .userartigosItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  

@@ -1,0 +1,15 @@
+.trending {
+  border-bottom: 1px solid;
+  width: 100%;
+}
+.trendingContent {
+  padding-left: 11%;
+  padding-right: 11%;
+}
+
+.trendingItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}

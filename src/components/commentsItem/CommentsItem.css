@@ -1,0 +1,37 @@
+.CommentsItem {
+    display: flex;
+    flex-grow: 0;
+    margin: 1%;
+    width: 80%;
+    border: 1px solid black;
+}
+
+
+.personalInfoComments{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding: 16px;
+    border-right: 0.5px solid;
+}
+.authorNameComments{
+}
+
+.circularPhotoComments {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.textInfoComments{
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 15px;
+    align-items: center;
+}
+
+.commentsText{
+    padding-top: 10px;
+    font-size: 14px;
+}

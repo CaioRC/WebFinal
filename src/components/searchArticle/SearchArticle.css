@@ -1,0 +1,14 @@
+.searchArticle {
+    width: 100%;
+  }
+  .searchArticleContent {
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+  
+  .searchArticleItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  

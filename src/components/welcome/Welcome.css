@@ -1,0 +1,26 @@
+.welcome{
+    background-color: #FFC017;
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid;
+}
+
+.welcomeContent{
+    display: block;
+    justify-content: space-between;
+    padding-left: 11%;
+    padding-right: 11%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcomeSignup{
+    padding: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    background-color: #FFC017;
+    white-space: nowrap;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
