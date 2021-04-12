@@ -39,7 +39,7 @@ class UserArtigosItem extends Component {
         if (excluir) {
             const deleteRes = await deleteArticleByID(this.props.id)
             alert("Artigo deletado com sucesso.")
-        this.props.callApi()
+            this.props.callApi()
         }
 
         // // )
@@ -71,23 +71,25 @@ class UserArtigosItem extends Component {
                         </div>
                     </div>
                 </Link>
-                {   this.props.currentUser.id === this.state.idAutor ?
-                    <div className="buttonsArticle">
-                        <Link to={{
-                            pathname: "/agora/write",
-                            state: {
-                                alterar: true,
-                                titulo: this.props.titulo,
-                                descricao: this.props.descricao,
-                                conteudo: this.props.conteudo,
-                                categoria: this.props.conteudo,
-                                id: this.props.id
-                            }
-                        }} >
-                            <button className="AlterarButton" > Alterar </button>
-                        </Link>
-                        <button className="DeletarButton" onClick={this.handleDelete.bind(this)}> Deletar </button>
-                    </div> : null
+                {   this.props.currentUser ?
+                    this.props.currentUser.id === this.state.idAutor ?
+                        <div className="buttonsArticle">
+                            <Link to={{
+                                pathname: "/agora/write",
+                                state: {
+                                    alterar: true,
+                                    titulo: this.props.titulo,
+                                    descricao: this.props.descricao,
+                                    conteudo: this.props.conteudo,
+                                    categoria: this.props.conteudo,
+                                    id: this.props.id
+                                }
+                            }} >
+                                <button className="AlterarButton" > Alterar </button>
+                            </Link>
+                            <button className="DeletarButton" onClick={this.handleDelete.bind(this)}> Deletar </button>
+                        </div> : null :
+                        null
                 }
             </div >
         )
