@@ -39,7 +39,6 @@ class UserArtigosItem extends Component {
         if (excluir) {
             const deleteRes = await deleteArticleByID(this.props.id)
             alert("Artigo deletado com sucesso.")
-            console.log(deleteRes)
         this.props.callApi()
         }
 

@@ -20,14 +20,14 @@ class App extends Component {
       <div>
         <Header currentUser={false}/>
         <Switch>
-          <Route exact path="/" component={HomePage}/>
-          <Route path="/topics" component={Topics}/>
-          <Route path="/topic/:name" component={TopicsPage}/>
-          <Route path="/sign-in-up" component={SignInUp}/>
-          <Route path="/artigo/:id" component={articlepage}/>
-          <Route path="/write" component={props => <Write  {...props}/>}/>
-          <Route path="/usuario/:id" component={props => <Perfil key={props.match.params.id} {...props}/>}/>
-          <Route path="/search/:search" component={props => <Search key={props.match.params.search} {...props}/>}/>
+          <Route exact path="/agora/" component={HomePage}/>
+          <Route path="/agora/topics" component={Topics}/>
+          <Route path="/agora/topic/:name" component={TopicsPage}/>
+          <Route path="/agora/sign-in-up" component={SignInUp}/>
+          <Route path="/agora/artigo/:id" component={articlepage}/>
+          <Route path="/agora/write" component={props => <Write  {...props}/>}/>
+          <Route path="/agora/usuario/:id" component={props => <Perfil key={props.match.params.id} {...props}/>}/>
+          <Route path="/agora/search/:search" component={props => <Search key={props.match.params.search} {...props}/>}/>
         </Switch>
       </div>
     );

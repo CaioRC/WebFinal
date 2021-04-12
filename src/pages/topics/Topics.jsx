@@ -16,7 +16,7 @@ export default () => (
         <div className="topicsContent">{
             TOPICSDATA.topics.map(topicData =>
                 <Link className="link" to={{
-                    pathname: "/topic/" + topicData.url,
+                    pathname: "/agora/topic/" + topicData.url,
                     TopicName:  topicData.name
                 }}
                 >

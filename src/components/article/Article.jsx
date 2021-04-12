@@ -31,11 +31,9 @@ class Article extends Component {
         const artigo = await getArticleByID(this.props.id)
         if (this.props.currentUser) {
             const isLiked = await getisLiked(this.props.currentUser.id, this.props.id);
-            console.log(isLiked)
             this.setState({ isLiked: isLiked });
             this.setState({ userId: this.props.currentUser.id, artigoId: this.props.id })
         }
-        console.log(artigo)
         this.setState({ ...artigo });
         
     }

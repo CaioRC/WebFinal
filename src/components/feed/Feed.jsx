@@ -30,7 +30,6 @@ class Feed extends Component {
     }
     render() {
 
-        console.log(this.state)
         return (
             <div className="feed">
                 <div className="feedContent">

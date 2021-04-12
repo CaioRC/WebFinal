@@ -6,7 +6,6 @@ import Feed from "../../components/feed/Feed";
 import "./TopicsPage.css"
 
 export default (props) => {
-    console.log(props)
     return(
         <div className="topicPage">
             <h1 className="topicTitle">{

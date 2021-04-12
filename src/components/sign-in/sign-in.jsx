@@ -34,7 +34,6 @@ class SignIn extends Component {
         password: ""
       };
 
-      console.log(user)
 
       if(user){
         this.props.setCurrentUser(user.usuario)

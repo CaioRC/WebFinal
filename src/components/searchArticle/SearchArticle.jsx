@@ -24,7 +24,6 @@ class SearchArticle extends Component {
     }
     render() {
 
-        console.log(this.state.artigos.length)
         return (
             <div className="searchArticle">
                 <div className="searchArticleContent">

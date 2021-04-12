@@ -16,14 +16,11 @@ class UserArtigos extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props.id)
         this.callApiUserArticles();
     }
 
     async callApiUserArticles() {
         const userArtigos = await getUserArticleByID(this.props.id)
-        console.log("Artigos do Usuario")
-        console.log(userArtigos)
         this.setState({ artigos: userArtigos || [] })
     }
     

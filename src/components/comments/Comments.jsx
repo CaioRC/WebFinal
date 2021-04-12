@@ -20,7 +20,6 @@ class Comments extends Component {
     }
 
     componentDidMount() {
-        console.log(this)
         this.callCommentsApi()
     }
 
@@ -29,7 +28,6 @@ class Comments extends Component {
         this.setState({
             comments: comments
         })
-        console.log(comments)
     }
 
     handleChange = event => {

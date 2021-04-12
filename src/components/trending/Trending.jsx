@@ -27,7 +27,6 @@ class Trending extends Component {
         if (this.props.url) {
             try{
                 const trendingTopic = await getTrendingTopic(this.props.url)
-            console.log("AQUI")
             this.setState({ artigos: trendingTopic })
             }catch(err){
                 this.setState({ artigos: [] })
@@ -35,7 +34,6 @@ class Trending extends Component {
         } else {
             const trending = await getTrending()
             this.setState({ artigos: trending })
-            console.log(trending)
         }
     }
 

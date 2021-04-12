@@ -23,7 +23,6 @@ class Header extends Component{
   handleChange = event => {
     const { name, value } = event.target;
 
-    console.log(this.state.search)
     this.setState({ [name]: value });
   };
 

@@ -9,7 +9,6 @@ class Search extends Component {
         super()
     }
     componentDidMount(){
-        console.log(this)
     }
 
     render() {

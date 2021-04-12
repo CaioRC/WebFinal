@@ -57,7 +57,6 @@ class SignUp extends Component {
         })
       }
 
-      console.log(user)
 
     } catch (err) {
       console.log(err)
